@@ -1,20 +1,18 @@
-import React from "react";
-import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
+import React from 'react'
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import Home from './src/screens/Home'
+import Words from './src/screens/Words'
+
+const Stack = createNativeStackNavigator()
 
 export default function App() {
-    return (
-        <View>
-            <Text
-                style={{
-                    textAlign: "center",
-                    fontSize: 20,
-                    marginTop: 100,
-                }}
-            >
-                Hello!
-            </Text>
-            <StatusBar style="auto" />
-        </View>
-    );
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Words" component={Words} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  )
 }
