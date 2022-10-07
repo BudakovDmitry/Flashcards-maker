@@ -8,6 +8,7 @@ import Settings from '../screens/Settings'
 
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import Statistics from '../screens/Statistics'
+import WordsNavigation from './WordsNavigation'
 
 const Drawer = createDrawerNavigator()
 
@@ -34,7 +35,7 @@ const DrawerNavigator = () => {
         />
         <Drawer.Screen
           name="Words"
-          component={Words}
+          component={WordsNavigation}
           options={{
             drawerIcon: ({ color }) => (
               <Ionicons name="library-outline" size={22} color={color} />
