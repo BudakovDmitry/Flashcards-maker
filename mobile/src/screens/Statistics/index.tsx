@@ -1,12 +1,12 @@
 import React from 'react'
 import { Text, SafeAreaView } from 'react-native'
 
-const Home = () => {
+const Statistics = () => {
   return (
     <SafeAreaView>
-      <Text>Home</Text>
+      <Text>Statistics</Text>
     </SafeAreaView>
   )
 }
 
-export default Home
+export default Statistics

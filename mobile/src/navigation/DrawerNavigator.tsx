@@ -7,6 +7,7 @@ import CustomDrawer from '../components/CustomDrawer'
 import Settings from '../screens/Settings'
 
 import Ionicons from 'react-native-vector-icons/Ionicons'
+import Statistics from '../screens/Statistics'
 
 const Drawer = createDrawerNavigator()
 
@@ -42,6 +43,16 @@ const DrawerNavigator = () => {
           }}
         />
         <Drawer.Screen
+          name="Statistics"
+          component={Statistics}
+          options={{
+            drawerIcon: ({ color }) => (
+              <Ionicons name="podium-outline" size={22} color={color} />
+            ),
+            headerShown: false,
+          }}
+        />
+        <Drawer.Screen
           name="Settings"
           component={Settings}
           options={{
@@ -56,5 +67,4 @@ const DrawerNavigator = () => {
   )
 }
 
-// podium-outline
 export default DrawerNavigator
