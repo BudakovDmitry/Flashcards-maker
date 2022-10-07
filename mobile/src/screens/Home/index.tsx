@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Button } from 'react-native'
+import { Text, Button, SafeAreaView } from 'react-native'
 import { NavigationProp, ParamListBase } from '@react-navigation/native'
 
 type HomeProps = {
@@ -8,10 +8,9 @@ type HomeProps = {
 
 const Home = ({ navigation }: HomeProps) => {
   return (
-    <View>
+    <SafeAreaView>
       <Text>Home</Text>
-      <Button title="click" onPress={() => navigation.navigate('Words')} />
-    </View>
+    </SafeAreaView>
   )
 }
 

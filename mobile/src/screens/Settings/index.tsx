@@ -1,12 +1,12 @@
 import React from 'react'
 import { SafeAreaView, Text } from 'react-native'
 
-const Words = () => {
+const Settings = () => {
   return (
     <SafeAreaView>
-      <Text>Words</Text>
+      <Text>Settings</Text>
     </SafeAreaView>
   )
 }
 
-export default Words
+export default Settings
