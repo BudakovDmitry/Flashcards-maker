@@ -6,7 +6,7 @@ import Words from '../screens/Words'
 
 const Stack = createNativeStackNavigator()
 
-const WordsNavigation = () => {
+const WordsNavigator = () => {
   return (
     <NavigationContainer independent={true}>
       <Stack.Navigator>
@@ -25,4 +25,4 @@ const WordsNavigation = () => {
   )
 }
 
-export default WordsNavigation
+export default WordsNavigator
