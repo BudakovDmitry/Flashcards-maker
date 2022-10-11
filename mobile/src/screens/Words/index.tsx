@@ -1,12 +1,6 @@
 import React from 'react'
-import { NavigationProp, ParamListBase } from '@react-navigation/native'
-import { SafeAreaView, Text, Button } from 'react-native'
 import Word from '../../components/Word'
 import * as Styled from './styles'
-
-type WordsProps = {
-  navigation: NavigationProp<ParamListBase>
-}
 
 const words = [
   {
@@ -35,14 +29,11 @@ const words = [
   },
 ]
 
-const Words = ({ navigation }: WordsProps) => {
+const Words = () => {
   const renderItem = ({ item }: any) => <Word word={item.word} />
 
   return (
-    <SafeAreaView>
-      <Text>Words</Text>
-      <Button title="Click" onPress={() => navigation.navigate('NewWords')} />
-      <Text>My words</Text>
+    <Styled.WordsContainer>
       <Styled.WordsListContainer>
         <Styled.WordsList
           data={words}
@@ -50,7 +41,7 @@ const Words = ({ navigation }: WordsProps) => {
           keyExtractor={(item: any) => item.id}
         />
       </Styled.WordsListContainer>
-    </SafeAreaView>
+    </Styled.WordsContainer>
   )
 }
 

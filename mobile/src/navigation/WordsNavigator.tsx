@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import NewWords from '../screens/NewWords'
 import Words from '../screens/Words'
+import AddWordButton from '../components/AddWordButton'
 
 const Stack = createNativeStackNavigator()
 
@@ -13,13 +14,11 @@ const WordsNavigator = () => {
         <Stack.Screen
           name="Words"
           component={Words}
-          options={{ headerShown: false }}
+          options={({ navigation }) => ({
+            headerRight: () => <AddWordButton navigation={navigation} />,
+          })}
         />
-        <Stack.Screen
-          name="NewWords"
-          component={NewWords}
-          options={{ headerShown: false }}
-        />
+        <Stack.Screen name="NewWords" component={NewWords} />
       </Stack.Navigator>
     </NavigationContainer>
   )
