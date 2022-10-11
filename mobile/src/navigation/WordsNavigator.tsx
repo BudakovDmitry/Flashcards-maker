@@ -18,7 +18,11 @@ const WordsNavigator = () => {
             headerRight: () => <AddWordButton navigation={navigation} />,
           })}
         />
-        <Stack.Screen name="NewWords" component={NewWords} />
+        <Stack.Screen
+          name="NewWords"
+          component={NewWords}
+          options={{ title: 'New word' }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   )
