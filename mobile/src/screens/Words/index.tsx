@@ -1,5 +1,6 @@
 import React from 'react'
 import Word from '../../components/Word'
+import { MAIN_COLOR } from '../../constants'
 import * as Styled from './styles'
 
 const words = [
@@ -162,7 +163,7 @@ const Words = () => {
     <Styled.WordsContainer>
       <Styled.SearchInput
         placeholder="Search..."
-        placeholderTextColor="#000000"
+        placeholderTextColor={MAIN_COLOR}
       />
       <Styled.WordsListContainer>
         <Styled.WordsList

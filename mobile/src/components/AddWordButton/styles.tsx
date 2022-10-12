@@ -1,4 +1,5 @@
 import styled from 'styled-components/native'
+import { MAIN_COLOR } from '../../constants'
 
 export const ButtonContainer = styled.Pressable`
   width: 32px;
@@ -6,7 +7,7 @@ export const ButtonContainer = styled.Pressable`
   border-radius: 16px;
   align-items: center;
   justify-content: center;
-  background-color: #d9d9d9;
+  background-color: ${MAIN_COLOR};
 `
 
 export const ButtonText = styled.Text`

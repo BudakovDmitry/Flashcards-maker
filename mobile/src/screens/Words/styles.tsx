@@ -21,8 +21,7 @@ export const SearchInput = styled.TextInput`
   width: 380px;
   height: 40px;
   margin: 10px auto;
-  background-color: #d9d9d9;
+  background-color: #cce0e1;
   border-radius: 15px;
   padding-left: 10px;
-  color: #000000;
 `

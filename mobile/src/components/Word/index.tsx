@@ -4,6 +4,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 import { WordType } from '../../types'
 import Swipeable from 'react-native-gesture-handler/Swipeable'
 import RightActionSwipe from '../RightActionSwipe'
+import { MAIN_COLOR } from '../../constants'
 
 type WordProps = {
   word: WordType
@@ -19,9 +20,9 @@ const Word = ({ word }: WordProps) => {
       <Styled.WordContainer>
         <Styled.ImageTouchable>
           {word.isActive ? (
-            <Ionicons name="eye-outline" size={30} />
+            <Ionicons name="eye-outline" size={30} color={MAIN_COLOR} />
           ) : (
-            <Ionicons name="eye-off-outline" size={30} />
+            <Ionicons name="eye-off-outline" size={30} color={MAIN_COLOR} />
           )}
         </Styled.ImageTouchable>
         <Styled.WordsContainer>
