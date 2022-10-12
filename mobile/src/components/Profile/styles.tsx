@@ -1,4 +1,5 @@
 import styled from 'styled-components/native'
+import { MAIN_COLOR } from '../../constants'
 
 export const ProfileContainer = styled.ImageBackground`
   margin-bottom: 10px;
@@ -23,12 +24,12 @@ export const ProfileTextContainer = styled.View`
 
 export const ProfileName = styled.Text`
   text-align: center;
-  color: #182442;
+  color: ${MAIN_COLOR};
   font-weight: bold;
   margin-bottom: 5px;
 `
 export const ProfileCountWords = styled.Text`
   text-align: center;
-  color: #182442;
+  color: #696969;
   font-style: italic;
 `

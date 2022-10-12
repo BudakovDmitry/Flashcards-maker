@@ -1,4 +1,5 @@
 import styled from 'styled-components/native'
+import { MAIN_COLOR } from '../../constants'
 
 export const LogoutContainer = styled.View`
   position: absolute;
@@ -8,7 +9,7 @@ export const LogoutContainer = styled.View`
 `
 
 export const LogoutText = styled.Text`
-  color: #182442;
+  color: ${MAIN_COLOR};
   margin-left: 10px;
 `
 

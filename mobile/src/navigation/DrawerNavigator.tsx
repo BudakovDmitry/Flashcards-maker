@@ -11,6 +11,7 @@ import Statistics from '../screens/Statistics'
 import WordsNavigator from './WordsNavigator'
 import SignIn from '../screens/SignIn'
 import SignUp from '../screens/SignUp'
+import { MAIN_COLOR } from '../constants'
 
 const Drawer = createDrawerNavigator()
 const Stack = createNativeStackNavigator()
@@ -25,8 +26,8 @@ const DrawerNavigator = () => {
           drawerContent={props => <CustomDrawer {...props} />}
           screenOptions={{
             drawerLabelStyle: { marginLeft: -15 },
-            drawerActiveTintColor: '#1a2644',
-            drawerInactiveTintColor: '#4c576f',
+            drawerActiveTintColor: MAIN_COLOR,
+            drawerInactiveTintColor: MAIN_COLOR,
           }}
         >
           <Drawer.Screen
