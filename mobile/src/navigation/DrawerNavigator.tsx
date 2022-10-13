@@ -12,6 +12,7 @@ import WordsNavigator from './WordsNavigator'
 import SignIn from '../screens/SignIn'
 import SignUp from '../screens/SignUp'
 import { MAIN_COLOR } from '../constants'
+import Activities from '../screens/Activities'
 
 const Drawer = createDrawerNavigator()
 const Stack = createNativeStackNavigator()
@@ -46,6 +47,16 @@ const DrawerNavigator = () => {
             options={{
               drawerIcon: ({ color }) => (
                 <Ionicons name="library-outline" size={22} color={color} />
+              ),
+              headerShown: false,
+            }}
+          />
+          <Drawer.Screen
+            name="Activities"
+            component={Activities}
+            options={{
+              drawerIcon: ({ color }) => (
+                <Ionicons name="apps-outline" size={22} color={color} />
               ),
               headerShown: false,
             }}
