@@ -8,7 +8,7 @@ const Activities = () => {
     <SafeAreaView style={{ flex: 1 }}>
       <Image source={Logo} style={{ width: '100%', opacity: 0.3 }} />
       <Text style={{ fontSize: 30, fontWeight: 'bold', textAlign: 'center' }}>
-        HOME PAGE
+        ACTIVITIES
       </Text>
     </SafeAreaView>
   )
